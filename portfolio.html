@@ -16,9 +16,9 @@
   </head>
   <body>
     <header>
-      <section class="container navigation">
+      <div class="container navigation">
         <nav>
-          <a class="link logo" href="./">Web<span class="logo-top">Studio</span></a>
+          <a class="link logo logo-up" href="./">Web<span class="logo-top">Studio</span></a>
           <ul class="list pages">
             <li><a class="link page" href="./">Студия</a></li>
             <li><a class="link page active" href="./portfolio.html">Портфолио</a></li>
@@ -26,10 +26,23 @@
           </ul>
         </nav>
         <ul class="list contacts">
-          <li><a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a class="link contact" href="mailto:info@devstudio.com">
+              <svg class="icon-envelope" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link contact" href="tel:+380961111111"
+              ><svg class="icon-smartphone" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </section>
+      </div>
     </header>
     <main>
       <section class="container section">
@@ -45,96 +58,147 @@
         <!-- Проекты портфолио -->
         <ul class="list projects">
           <li class="progect-element">
-            <img src="./images/project1.jpg" alt="Технокряк" />
-            <div class="project">
-              <h3 class="project-name">Технокряк</h3>
-              <p class="project-type">Веб-сайт</p>
-            </div>
+            <a class="link" href="">
+              <img src="./images/project1.jpg" alt="Технокряк" />
+              <div class="project">
+                <h3 class="project-name">Технокряк</h3>
+                <p class="project-type">Веб-сайт</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img
-              src="./images/project2.jpg"
-              width="370"
-              height="294"
-              alt="Постер New Orlean vs Golden Star"
-            />
-            <div class="project">
-              <h3 class="project-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-              <p class="project-type">Дизайн</p>
-            </div>
+            <a class="link" href=""
+              ><img
+                src="./images/project2.jpg"
+                width="370"
+                height="294"
+                alt="Постер New Orlean vs Golden Star"
+              />
+              <div class="project">
+                <h3 class="project-name">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h3>
+                <p class="project-type">Дизайн</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img src="./images/project3.jpg" width="370" height="294" alt="Ресторан Seafood" />
-            <div class="project">
-              <h3 class="project-name">Ресторан <span lang="en">Seafood</span></h3>
-              <p class="project-type">Приложение</p>
-            </div>
+            <a class="link" href=""
+              ><img src="./images/project3.jpg" width="370" height="294" alt="Ресторан Seafood" />
+              <div class="project">
+                <h3 class="project-name">Ресторан <span lang="en">Seafood</span></h3>
+                <p class="project-type">Приложение</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img src="./images/project4.jpg" width="370" height="294" alt="Проект Prime" />
-            <div class="project">
-              <h3 class="project-name">Проект <span lang="en">Prime</span></h3>
-              <p class="project-type">Маркетинг</p>
-            </div>
+            <a class="link" href=""
+              ><img src="./images/project4.jpg" width="370" height="294" alt="Проект Prime" />
+              <div class="project">
+                <h3 class="project-name">Проект <span lang="en">Prime</span></h3>
+                <p class="project-type">Маркетинг</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img src="./images/project5.jpg" width="370" height="294" alt="Проект Boxes" />
-            <div class="project">
-              <h3 class="project-name">Проект <span lang="en">Boxes</span></h3>
-              <p class="project-type">Приложение</p>
-            </div>
+            <a class="link" href=""
+              ><img src="./images/project5.jpg" width="370" height="294" alt="Проект Boxes" />
+              <div class="project">
+                <h3 class="project-name">Проект <span lang="en">Boxes</span></h3>
+                <p class="project-type">Приложение</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img
-              src="./images/project6.jpg"
-              width="370"
-              height="294"
-              alt="Inspiration has no Borders"
-            />
-            <div class="project">
-              <h3 class="project-name" lang="en">Inspiration has no Borders</h3>
-              <p class="project-type">Веб-сайт</p>
-            </div>
+            <a class="link" href=""
+              ><img
+                src="./images/project6.jpg"
+                width="370"
+                height="294"
+                alt="Inspiration has no Borders"
+              />
+              <div class="project">
+                <h3 class="project-name" lang="en">Inspiration has no Borders</h3>
+                <p class="project-type">Веб-сайт</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img
-              src="./images/project7.jpg"
-              width="370"
-              height="294"
-              alt="Издание Limited Edition"
-            />
-            <div class="project">
-              <h3 class="project-name">Издание <span lang="en">Limited Edition</span></h3>
-              <p class="project-type">Дизайн</p>
-            </div>
+            <a class="link" href=""
+              ><img
+                src="./images/project7.jpg"
+                width="370"
+                height="294"
+                alt="Издание Limited Edition"
+              />
+              <div class="project">
+                <h3 class="project-name">Издание <span lang="en">Limited Edition</span></h3>
+                <p class="project-type">Дизайн</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img src="./images/project8.jpg" width="370" height="294" alt="Проект LAB" />
-            <div class="project">
-              <h3 class="project-name">Проект <span lang="en">LAB</span></h3>
-              <p class="project-type">Маркетинг</p>
-            </div>
+            <a class="link" href=""
+              ><img src="./images/project8.jpg" width="370" height="294" alt="Проект LAB" />
+              <div class="project">
+                <h3 class="project-name">Проект <span lang="en">LAB</span></h3>
+                <p class="project-type">Маркетинг</p>
+              </div></a
+            >
           </li>
           <li class="progect-element">
-            <img src="./images/project9.jpg" width="370" height="294" alt="Growing Business" />
-            <div class="project">
-              <h3 class="project-name" lang="en">Growing Business</h3>
-              <p class="project-type">Приложение</p>
-            </div>
+            <a class="link" href=""
+              ><img src="./images/project9.jpg" width="370" height="294" alt="Growing Business" />
+              <div class="project">
+                <h3 class="project-name" lang="en">Growing Business</h3>
+                <p class="project-type">Приложение</p>
+              </div></a
+            >
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <div class="container">
-        <a class="link logo logo-dw" href="./">Web<span class="logo-bottom">Studio</span></a>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-        <ul class="list">
-          <li>
-            <a class="link contact-bottom" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li><a class="link contact-bottom" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+      <div class="container section-footer">
+        <div class="blok-adress">
+          <a class="link logo logo-dw" href="./">Web<span class="logo-bottom">Studio</span></a>
+          <address>г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="list">
+            <li>
+              <a class="link contact-bottom" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a class="link contact-bottom" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+        <div class="blok-join">
+          <b class="join-title">присоединяйтесь</b>
+          <ul class="list join-list">
+            <li>
+              <a class="link-social join" href="" aria-label="instagram"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="link-social join" href="" aria-label="twitter"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="link-social join" href="" aria-label="facebook"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="link-social join" href="" aria-label="linkedin"
+                ><svg class="icon-social" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
