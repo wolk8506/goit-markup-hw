@@ -16,6 +16,8 @@
   --background-box: rgba(47, 48, 58, 0.8);
   --background-color-project: rgba(33, 150, 243, 0.9);
   --background-modal: rgba(0, 0, 0, 0.2);
+  --border-color-form: rgba(33, 33, 33, 0.2);
+  --modal-btn-color: rgba(0, 0, 0, 0.1);
 }
 /* Общее */
 h1,
@@ -546,6 +548,54 @@ address {
 }
 .blok-join {
   padding-top: 12px;
+  margin-right: 93px;
+}
+.blok-subscribe {
+  padding-top: 12px;
+}
+.subscribe-field {
+  display: flex;
+}
+.subscribe-mail {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px 10px 29px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  color: var(--background-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-subscribe {
+  margin-left: 10px;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background: var(--button-hiro-hover);
 }
 /* Модальное окно */
 .backdrop {
@@ -570,7 +620,7 @@ address {
   left: 50%;
   width: 528px;
   height: 581px;
-  padding: 8px;
+  padding: 40px;
   background-color: var(--background-color);
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
@@ -580,13 +630,17 @@ address {
 }
 .modal-btn {
   display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   padding: 6px;
-  margin-left: auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  border: 1px solid var(--modal-btn-color);
   border-radius: 50%;
   background-color: var(--background-color);
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
@@ -599,4 +653,133 @@ address {
 .modal-btn:hover,
 .modal-btn:focus {
   fill: var(--accent-color);
+}
+
+.contact-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title--color);
+}
+
+.blok-contact label {
+  position: relative;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.blok-contact label:focus-within,
+.blok-contact input:focus-within + .icon-contact,
+.blok-contact textarea:focus-within {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.blok-contact input:focus-within + .checkbox-icon,
+.blok-contact input:hover + .checkbox-icon {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+.blok-contact input:hover,
+.blok-contact input:hover + .icon-contact,
+.blok-contact textarea:hover {
+  border-color: var(--accent-color);
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+
+.blok-contact input,
+.blok-contact textarea {
+  display: block;
+  width: 448px;
+  border: 1px solid var(--border-color-form);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blok-contact input {
+  padding-left: 42px;
+  height: 40px;
+}
+.blok-contact textarea {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 1.17;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  height: 120px;
+  letter-spacing: 0.01em;
+  resize: none;
+}
+.blok-contact .contact-checkbox-text {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contact-checkbox-link {
+  margin-left: 3px;
+  color: var(--accent-color);
+}
+.contact-btn {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+
+  padding: 10px 55px 10px 56px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: var(--button-hiro-hover);
+}
+.icon-contact {
+  display: block;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon {
+  display: block;
+  margin-right: 7px;
+  margin-left: 13px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-top-color);
+  border-radius: 2px;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: var(--accent-color);
+  border-radius: 2px;
+  background-image: url('../images/icon-check.svg');
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-color: var(--accent-color);
+}
+.contact-group {
+  position: relative;
+  margin-bottom: 10px;
 }
