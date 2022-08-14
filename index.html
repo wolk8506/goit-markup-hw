@@ -49,7 +49,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn hero-btn" type="button">Заказать услугу</button>
+          <button class="btn hero-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Особенности -->
@@ -102,9 +102,24 @@
       <section class="container section work">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list work-list">
-          <li><img src="./images/box1.jpg" alt="Десктопное ПО" width="370" height="294" /></li>
-          <li><img src="./images/box2.jpg" alt="Мобильное ПО" width="370" height="294" /></li>
-          <li><img src="./images/box3.jpg" alt="Дизайн" width="370" height="294" /></li>
+          <li class="work-item">
+            <img src="./images/box1.jpg" alt="Десктопные приложения" width="370" height="294" />
+            <div class="work-item-box">
+              <p>Десктопные приложения</p>
+            </div>
+          </li>
+          <li class="work-item">
+            <img src="./images/box2.jpg" alt="Мобильные приложения" width="370" height="294" />
+            <div class="work-item-box">
+              <p>Мобильные приложения</p>
+            </div>
+          </li>
+          <li class="work-item">
+            <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370" height="294" />
+            <div class="work-item-box">
+              <p>Дизайнерские решения</p>
+            </div>
+          </li>
         </ul>
       </section>
       <!-- Наша команда -->
@@ -332,5 +347,17 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="icon-modal" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- js для модального окна -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
